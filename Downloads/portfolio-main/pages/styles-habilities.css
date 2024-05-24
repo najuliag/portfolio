@@ -1,0 +1,82 @@
+@import url("../style.css");
+.imagens{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    gap: 16px;
+    margin-right: 30px;
+}
+.imagens .icon{
+  padding: 16px;
+  background-color:#5a2759;
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+.imagens .icon .java-img{
+    width: 60px;
+}
+.sobre-secao{
+ display: flex;   
+ width: 40%;
+ flex-direction: column;
+ margin-left: 25px;
+}
+.sobre-mim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 90%;
+    margin: 110px auto;
+    gap: 230px;
+}
+
+@media (max-width: 768px) {
+    .imagens {
+        width: 50%;
+        margin-right: 15px;
+        margin-bottom: 80px;
+    }
+
+    .sobre-secao {
+        width: 45%;
+        margin-left: 15px;
+    }
+
+    .sobre-mim {
+        flex-direction: column;
+        gap: 50px;
+        margin: 60px auto;
+    }
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 480px) {
+    .imagens {
+        width: 90%;
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .imagens .icon {
+        padding: 10px;
+    }
+
+    .imagens .icon .java-img {
+        width: 50px;
+    }
+
+    .sobre-secao {
+        width: 90%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .sobre-mim {
+        flex-direction: column;
+        gap: 30px;
+        margin: 40px auto;
+    }
+}
